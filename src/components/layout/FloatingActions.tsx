@@ -1,21 +1,24 @@
+"use client";
+
 import { Phone } from "lucide-react";
 
 export default function FloatingActions() {
-  const whatsappUrl = `https://wa.me/917219028227?text=Hi%20Panchsutra%20Consultants%2C%20I%20would%20like%20to%20discuss%20a%20project.`;
-  const callUrl = `tel:+917219028227`;
+  const whatsappUrl =
+    "https://wa.me/917219028227?text=Hi%20Panchsutra%20Consultants%2C%20I%20would%20like%20to%20discuss%20a%20project.";
+  const callUrl = "tel:+917219028227";
 
   return (
     <div
       className="fixed bottom-5 right-4 md:right-5 z-50 flex flex-col items-center gap-3"
       aria-label="Floating contact actions"
     >
-      {/* WhatsApp — official brand SVG icon */}
+      {/* WhatsApp */}
       <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with Panchsutra Consultants on WhatsApp"
-        className="flex items-center justify-center w-12 h-12 rounded-full bg-[#25D366] shadow-md hover:bg-[#1EB857] transition-colors duration-200"
+        className="flex items-center justify-center w-12 h-12 rounded-full bg-[#25D366] shadow-lg hover:bg-[#1EB857] transition-colors duration-200"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +37,8 @@ export default function FloatingActions() {
       <a
         href={callUrl}
         aria-label="Call Panchsutra Consultants"
-        className="flex items-center justify-center w-12 h-12 rounded-full shadow-md transition-colors duration-200"
-        style={{ backgroundColor: "#1E5799", color: "#ffffff" }}
-        onMouseEnter={e => (e.currentTarget.style.backgroundColor = "#1a4d87")}
-        onMouseLeave={e => (e.currentTarget.style.backgroundColor = "#1E5799")}
+        className="flex items-center justify-center w-12 h-12 rounded-full bg-[#1E5799] shadow-lg hover:bg-[#1a4d87] transition-colors duration-200"
+        style={{ color: "#ffffff" }}
       >
         <Phone size={20} strokeWidth={2} />
       </a>

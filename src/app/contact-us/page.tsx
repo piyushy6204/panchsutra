@@ -154,9 +154,10 @@ export default function ContactPage() {
                   <select
                     id="service"
                     name="service"
+                    defaultValue=""
                     className="w-full px-4 py-3 bg-[#FAFAF9] border border-[#E8E5DF] rounded focus:outline-none focus:ring-2 focus:ring-[#B29A68] focus:border-transparent transition-shadow appearance-none"
                   >
-                    <option value="" disabled selected>Select a service...</option>
+                    <option value="" disabled>Select a service...</option>
                     {SERVICE_OPTIONS.map(opt => (
                       <option key={opt} value={opt}>{opt}</option>
                     ))}
@@ -214,7 +215,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-[#C9AF85] uppercase tracking-widest mb-1">Office Address</p>
-                      <address className="not-italic text-sm text-[#C4CDD4] leading-relaxed">
+                      <address className="not-italic text-sm leading-relaxed" style={{ color: "#FFFFFF" }}>
                         {COMPANY.address}
                       </address>
                     </div>
@@ -226,7 +227,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-[#C9AF85] uppercase tracking-widest mb-1">Phone</p>
-                      <a href={`tel:${COMPANY.phone.replace(/\s/g, "")}`} className="text-sm text-[#C4CDD4] hover:text-white transition-colors">
+                      <a href={`tel:${COMPANY.phone.replace(/\s/g, "")}`} className="text-sm hover:opacity-80 transition-opacity" style={{ color: "#FFFFFF" }}>
                         {COMPANY.phoneDisplay}
                       </a>
                     </div>
@@ -238,7 +239,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-[#C9AF85] uppercase tracking-widest mb-1">Email</p>
-                      <a href={`mailto:${COMPANY.email}`} className="text-sm text-[#C4CDD4] hover:text-white transition-colors break-all">
+                      <a href={`mailto:${COMPANY.email}`} className="text-sm hover:opacity-80 transition-opacity break-all" style={{ color: "#FFFFFF" }}>
                         {COMPANY.email}
                       </a>
                     </div>
@@ -250,7 +251,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-[#C9AF85] uppercase tracking-widest mb-1">Business Hours</p>
-                      <p className="text-sm text-[#C4CDD4]">
+                      <p className="text-sm" style={{ color: "#FFFFFF" }}>
                         Monday - Saturday<br />
                         9:30 AM - 6:30 PM
                       </p>
