@@ -54,8 +54,8 @@ export default function ProjectsPage() {
               >
                 {/* Project Meta */}
                 <div>
-                  <div className="text-xs font-mono font-semibold text-[#B29A68] mb-4">
-                    {String(index + 1).padStart(2, "0")} / {String(projects.length).padStart(2, "0")}
+                  <div className="text-base sm:text-lg font-mono font-bold text-[#B29A68] mb-4">
+                    {String(index + 1).padStart(2, "0")}
                   </div>
                   
                   <div className="space-y-4">

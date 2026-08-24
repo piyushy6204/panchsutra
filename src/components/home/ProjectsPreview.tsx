@@ -40,14 +40,14 @@ export default function ProjectsPreview() {
               className="grid grid-cols-1 lg:grid-cols-[64px_1fr_auto] gap-4 lg:gap-8 py-8 items-start"
             >
               {/* Index */}
-              <span className="hidden lg:flex items-center justify-center w-10 h-10 border border-[#E8E5DF] rounded text-xs font-mono font-semibold text-[#B29A68]">
+              <span className="hidden lg:flex items-center justify-center w-12 h-12 border border-[#E8E5DF] rounded text-lg font-mono font-extrabold text-[#B29A68]">
                 {String(index + 1).padStart(2, "0")}
               </span>
 
               {/* Content */}
               <div>
                 <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <span className="lg:hidden text-xs font-mono font-semibold text-[#B29A68]">
+                  <span className="lg:hidden text-base font-mono font-bold text-[#B29A68]">
                     {String(index + 1).padStart(2, "0")} —
                   </span>
                   <span className="text-xs font-medium px-2 py-0.5 bg-[#EBE7E0] text-[#596572] rounded">

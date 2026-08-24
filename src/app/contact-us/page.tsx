@@ -93,7 +93,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="firstName" className="block text-sm font-medium text-[#0C2B45]">
-                      First Name <span className="text-red-500">*</span>
+                      First Name
                     </label>
                     <input
                       type="text"
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="lastName" className="block text-sm font-medium text-[#0C2B45]">
-                      Last Name <span className="text-red-500">*</span>
+                      Last Name
                     </label>
                     <input
                       type="text"
@@ -122,7 +122,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="email" className="block text-sm font-medium text-[#0C2B45]">
-                      Email Address <span className="text-red-500">*</span>
+                      Email Address
                     </label>
                     <input
                       type="email"
@@ -166,7 +166,7 @@ export default function ContactPage() {
 
                 <div className="space-y-2">
                   <label htmlFor="message" className="block text-sm font-medium text-[#0C2B45]">
-                    Project Details / Message <span className="text-red-500">*</span>
+                    Project Details / Message
                   </label>
                   <textarea
                     id="message"
@@ -190,9 +190,9 @@ export default function ContactPage() {
               </form>
             </div>
 
-            {/* Right: Contact Information */}
-            <div>
-              <div className="bg-[#0C2B45] text-white p-8 lg:p-10 rounded-lg shadow-xl relative overflow-hidden">
+            {/* Right: Contact Information & Map */}
+            <div className="flex flex-col gap-6">
+              <div className="bg-[#0C2B45] text-white p-6 lg:p-8 rounded-lg shadow-xl relative overflow-hidden">
                 {/* Decorative background */}
                 <div className="absolute right-0 top-0 bottom-0 w-32 pointer-events-none opacity-5" aria-hidden="true">
                   <svg width="100%" height="100%" viewBox="0 0 100 300" preserveAspectRatio="none">
@@ -202,16 +202,16 @@ export default function ContactPage() {
                 </div>
 
                 <h3 
-                  className="text-xl font-bold mb-8 relative z-10"
+                  className="text-xl font-bold mb-6 relative z-10"
                   style={{ fontFamily: "var(--font-manrope, Manrope, system-ui, sans-serif)" }}
                 >
                   Contact Information
                 </h3>
 
-                <ul className="space-y-8 relative z-10">
+                <ul className="space-y-5 relative z-10">
                   <li className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded bg-[#133558] flex items-center justify-center flex-shrink-0">
-                      <MapPin size={18} className="text-[#B29A68]" />
+                    <div className="w-8 h-8 rounded bg-[#133558] flex items-center justify-center flex-shrink-0">
+                      <MapPin size={16} className="text-[#B29A68]" />
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-[#C9AF85] uppercase tracking-widest mb-1">Office Address</p>
@@ -222,8 +222,8 @@ export default function ContactPage() {
                   </li>
                   
                   <li className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded bg-[#133558] flex items-center justify-center flex-shrink-0">
-                      <Phone size={18} className="text-[#B29A68]" />
+                    <div className="w-8 h-8 rounded bg-[#133558] flex items-center justify-center flex-shrink-0">
+                      <Phone size={16} className="text-[#B29A68]" />
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-[#C9AF85] uppercase tracking-widest mb-1">Phone</p>
@@ -234,8 +234,8 @@ export default function ContactPage() {
                   </li>
                   
                   <li className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded bg-[#133558] flex items-center justify-center flex-shrink-0">
-                      <Mail size={18} className="text-[#B29A68]" />
+                    <div className="w-8 h-8 rounded bg-[#133558] flex items-center justify-center flex-shrink-0">
+                      <Mail size={16} className="text-[#B29A68]" />
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-[#C9AF85] uppercase tracking-widest mb-1">Email</p>
@@ -246,8 +246,8 @@ export default function ContactPage() {
                   </li>
 
                   <li className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded bg-[#133558] flex items-center justify-center flex-shrink-0">
-                      <Clock size={18} className="text-[#B29A68]" />
+                    <div className="w-8 h-8 rounded bg-[#133558] flex items-center justify-center flex-shrink-0">
+                      <Clock size={16} className="text-[#B29A68]" />
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-[#C9AF85] uppercase tracking-widest mb-1">Business Hours</p>
@@ -258,6 +258,20 @@ export default function ContactPage() {
                     </div>
                   </li>
                 </ul>
+              </div>
+
+              {/* Map */}
+              <div className="rounded-lg overflow-hidden shadow-md h-[300px] w-full border border-[#E8E5DF] bg-white">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d521.8402953008583!2d73.77852811500715!3d19.9921035067799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb0ef2f4e3c9%3A0x6b1826d873573b24!2sRoyal%20Apartment!5e1!3m2!1sen!2sin!4v1787596116339!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={false} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Panchsutra Consultants Office Location"
+                ></iframe>
               </div>
             </div>
 

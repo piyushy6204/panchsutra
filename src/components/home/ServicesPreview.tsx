@@ -39,7 +39,7 @@ export default function ServicesPreview() {
               aria-label={`${service.title} — ${service.shortDescription}`}
             >
               {/* Number */}
-              <span className="text-xs font-mono font-semibold text-[#B29A68] pt-0.5 flex-shrink-0">
+              <span className="text-base sm:text-lg font-mono font-bold text-[#B29A68] pt-0.5 flex-shrink-0">
                 {service.number}
               </span>
 
