@@ -80,6 +80,28 @@ function StepCard({ step, delay, inView, gridStyle }: StepCardProps) {
   );
 }
 
+/** Shared definitions for arrows */
+function ArrowDefs() {
+  return (
+    <svg width="0" height="0" className="absolute pointer-events-none">
+      <defs>
+        <marker id="arrowhead-gold" viewBox="0 0 10 10" markerWidth="5" markerHeight="5" refX="8" refY="5" orient="auto">
+          <path d="M 0 1 L 10 5 L 0 9 z" fill="#B29A68" />
+        </marker>
+      </defs>
+      <style>{`
+        @keyframes flowDash {
+          to { stroke-dashoffset: -24; }
+        }
+        .flowing-line {
+          stroke-dasharray: 6 6;
+          animation: flowDash 1s linear infinite;
+        }
+      `}</style>
+    </svg>
+  );
+}
+
 /** Animated diagonal arrow — down-right (01→02, 03→04) */
 function ArrowDownRight({ delay, inView }: { delay: number; inView: boolean }) {
   return (
@@ -89,27 +111,18 @@ function ArrowDownRight({ delay, inView }: { delay: number; inView: boolean }) {
         preserveAspectRatio="xMidYMid meet"
         className="w-full h-full max-h-[90px]"
         aria-hidden="true"
+        style={{
+          opacity: inView ? 1 : 0,
+          transition: `opacity 0.7s ease-out ${delay}ms`
+        }}
       >
-        {/* Main line */}
         <line
-          x1="100" y1="10" x2="300" y2="80"
+          x1="150" y1="25" x2="250" y2="65"
           stroke="#B29A68"
-          strokeWidth="2.5"
+          strokeWidth="2"
           strokeLinecap="round"
-          strokeDasharray="250"
-          strokeDashoffset={inView ? 0 : 250}
-          style={{ transition: `stroke-dashoffset 0.7s ease-out ${delay}ms` }}
-        />
-        {/* Arrowhead — fades in after line draws */}
-        <polyline
-          points="285,70 300,80 285,85"
-          fill="none"
-          stroke="#B29A68"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          opacity={inView ? 1 : 0}
-          style={{ transition: `opacity 0.3s ease-out ${delay + 500}ms` }}
+          className="flowing-line"
+          markerEnd="url(#arrowhead-gold)"
         />
       </svg>
     </div>
@@ -125,27 +138,18 @@ function ArrowUpRight({ delay, inView }: { delay: number; inView: boolean }) {
         preserveAspectRatio="xMidYMid meet"
         className="w-full h-full max-h-[90px]"
         aria-hidden="true"
+        style={{
+          opacity: inView ? 1 : 0,
+          transition: `opacity 0.7s ease-out ${delay}ms`
+        }}
       >
-        {/* Main line */}
         <line
-          x1="100" y1="80" x2="300" y2="10"
+          x1="150" y1="65" x2="250" y2="25"
           stroke="#B29A68"
-          strokeWidth="2.5"
+          strokeWidth="2"
           strokeLinecap="round"
-          strokeDasharray="250"
-          strokeDashoffset={inView ? 0 : 250}
-          style={{ transition: `stroke-dashoffset 0.7s ease-out ${delay}ms` }}
-        />
-        {/* Arrowhead */}
-        <polyline
-          points="285,20 300,10 285,5"
-          fill="none"
-          stroke="#B29A68"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          opacity={inView ? 1 : 0}
-          style={{ transition: `opacity 0.3s ease-out ${delay + 500}ms` }}
+          className="flowing-line"
+          markerEnd="url(#arrowhead-gold)"
         />
       </svg>
     </div>
@@ -156,25 +160,23 @@ function ArrowUpRight({ delay, inView }: { delay: number; inView: boolean }) {
 function ArrowDown({ delay, inView }: { delay: number; inView: boolean }) {
   return (
     <div className="flex justify-center h-12 my-1">
-      <svg viewBox="0 0 20 48" width="20" height="48" aria-hidden="true">
+      <svg 
+        viewBox="0 0 20 48" 
+        width="20" 
+        height="48" 
+        aria-hidden="true"
+        style={{
+          opacity: inView ? 1 : 0,
+          transition: `opacity 0.7s ease-out ${delay}ms`
+        }}
+      >
         <line
-          x1="10" y1="2" x2="10" y2="36"
+          x1="10" y1="8" x2="10" y2="38"
           stroke="#B29A68"
-          strokeWidth="1.5"
+          strokeWidth="2"
           strokeLinecap="round"
-          strokeDasharray="40"
-          strokeDashoffset={inView ? 0 : 40}
-          style={{ transition: `stroke-dashoffset 0.5s ease-out ${delay}ms` }}
-        />
-        <polyline
-          points="4,30 10,40 16,30"
-          fill="none"
-          stroke="#B29A68"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          opacity={inView ? 1 : 0}
-          style={{ transition: `opacity 0.3s ease-out ${delay + 300}ms` }}
+          className="flowing-line"
+          markerEnd="url(#arrowhead-gold)"
         />
       </svg>
     </div>
@@ -208,6 +210,7 @@ export default function OurApproach() {
       ref={sectionRef}
     >
       <Container>
+        <ArrowDefs />
         {/* ── Section Header ─────────────────────────────────── */}
         <div
           className="max-w-2xl mb-14"
