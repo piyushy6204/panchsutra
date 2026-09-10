@@ -4,14 +4,14 @@ import type { InsightArticle } from "@/types";
 export const insights: InsightArticle[] = [
   {
     slug: "how-to-choose-industrial-land-in-nashik",
-    title: "How to Choose the Right Industrial Land in Nashik",
-    metaTitle: "How to Choose Industrial Land in Nashik | Panchsutra Consultants",
+    title: "How to Choose the Right Industrial Land in Maharashtra",
+    metaTitle: "How to Choose Industrial Land in Maharashtra | Nashik, Pune & Beyond",
     metaDescription:
-      "Learn how to choose the right industrial land in Nashik based on location, connectivity, infrastructure, utilities, zoning, approvals and future business needs.",
+      "Learn how to choose the right industrial land in Maharashtra — Nashik, Pune, Mumbai and other regions — based on location, connectivity, infrastructure, utilities, zoning, approvals and future business needs.",
     category: "Industrial Real Estate",
-    primaryKeyword: "Industrial land in Nashik",
+    primaryKeyword: "Industrial land in Maharashtra",
     excerpt:
-      "Choosing the right industrial land is one of the most important decisions a business makes before setting up a manufacturing unit, warehouse, or industrial plant. This guide explains the key factors businesses should consider.",
+      "Choosing the right industrial land is one of the most important decisions a business makes before setting up a manufacturing unit, warehouse, or industrial plant. This guide explains the key factors businesses should consider — whether in Nashik, Pune, or anywhere across Maharashtra.",
     content: `Choosing the right industrial land is one of the most important decisions a business makes before setting up a manufacturing unit, warehouse, processing facility, or industrial plant.
 
 The location of your property can directly influence transportation costs, workforce availability, operational efficiency, future expansion, and overall business growth.
@@ -117,14 +117,14 @@ Panchsutra Consultants provides integrated real estate, engineering, and constru
   },
   {
     slug: "project-management-consultancy-for-construction-projects-in-pune",
-    title: "Why Project Management Consultancy Is Important for Construction Projects in Pune",
-    metaTitle: "Project Management Consultancy in Pune | Complete Guide",
+    title: "Why Project Management Consultancy Is Important for Construction Projects",
+    metaTitle: "Project Management Consultancy for Construction | Nashik, Pune & Maharashtra",
     metaDescription:
-      "Discover how project management consultancy helps construction projects in Pune improve planning, quality, cost control, coordination, timelines and execution.",
+      "Discover how project management consultancy helps construction projects across Maharashtra improve planning, quality, cost control, coordination, timelines and execution.",
     category: "Project Management",
-    primaryKeyword: "Project management consultancy in Pune",
+    primaryKeyword: "Project management consultancy in Maharashtra",
     excerpt:
-      "Construction projects involve multiple moving parts. Without proper coordination, even a well-planned project can face delays, cost overruns, and quality issues. This is where PMC becomes critical.",
+      "Construction projects involve multiple moving parts. Without proper coordination, even a well-planned project can face delays, cost overruns, and quality issues. This is where PMC becomes critical — across every type of project in Maharashtra.",
     content: `Construction projects involve multiple moving parts. Architects, structural consultants, MEP consultants, contractors, vendors, suppliers, engineers, and project owners all need to work together to achieve the desired outcome.
 
 Without proper coordination, even a well-planned construction project can face delays, cost overruns, quality issues, and communication gaps.
@@ -271,14 +271,14 @@ Panchsutra Consultants provides Civil & MEP consultancy, plumbing design, infras
   },
   {
     slug: "turnkey-construction-services-nashik-pune",
-    title: "Turnkey Construction Services in Nashik and Pune",
-    metaTitle: "Turnkey Construction Services in Nashik & Pune | Panchsutra",
+    title: "Turnkey Construction Services Across Maharashtra",
+    metaTitle: "Turnkey Construction Services in Maharashtra | Nashik, Pune & Beyond | Panchsutra",
     metaDescription:
-      "Explore how turnkey construction services in Nashik and Pune simplify planning, design, coordination and execution for industrial, commercial and warehouse projects.",
+      "Explore how turnkey construction services across Maharashtra — including Nashik and Pune — simplify planning, design, coordination and execution for industrial, commercial and warehouse projects.",
     category: "Construction",
-    primaryKeyword: "Turnkey construction services in Nashik and Pune",
+    primaryKeyword: "Turnkey construction services in Maharashtra",
     excerpt:
-      "Managing each stage of a construction project independently can become complicated. A turnkey construction partner manages multiple aspects under one coordinated structure.",
+      "Managing each stage of a construction project independently can become complicated. A turnkey construction partner manages multiple aspects under one coordinated structure — wherever your project is in Maharashtra.",
     content: `Planning and executing a construction project involves several stages, from initial planning and design to procurement, coordination, construction, quality control, and final completion.
 
 Managing each stage independently can become complicated, particularly for industrial facilities, warehouses, commercial buildings, and large-scale developments.
@@ -423,14 +423,14 @@ Panchsutra Consultants provides MIDC & SEZ advisory, industrial project guidance
   },
   {
     slug: "environmental-consultancy-industrial-projects-nashik-pune",
-    title: "Why Environmental Consultancy Is Important for Industrial Projects in Nashik and Pune",
-    metaTitle: "Environmental Consultancy for Industrial Projects | Nashik & Pune",
+    title: "Why Environmental Consultancy Is Important for Industrial Projects",
+    metaTitle: "Environmental Consultancy for Industrial Projects | Nashik, Pune & Maharashtra",
     metaDescription:
-      "Learn why environmental consultancy is important for industrial projects in Nashik and Pune, covering planning, regulatory guidance, sustainability and compliance support.",
+      "Learn why environmental consultancy is important for industrial projects across Maharashtra — including Nashik and Pune — covering planning, regulatory guidance, sustainability and compliance support.",
     category: "Environmental Planning",
-    primaryKeyword: "Environmental consultancy in Nashik and Pune",
+    primaryKeyword: "Environmental consultancy in Maharashtra",
     excerpt:
-      "Industrial development involves more than construction and infrastructure. Environmental planning should ideally begin during the early stages of project development.",
+      "Industrial development involves more than construction and infrastructure. Environmental planning should ideally begin during the early stages of project development — for any project across Maharashtra.",
     content: `Industrial development involves more than construction and infrastructure.
 
 Businesses also need to consider environmental requirements, resource usage, waste management, sustainability, regulatory obligations, and the potential environmental impact of their operations.

@@ -17,8 +17,8 @@ export default function ServicesPreview() {
               className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0C2B45] tracking-tight"
               style={{ fontFamily: "var(--font-manrope, Manrope, system-ui, sans-serif)" }}
             >
-              Expertise That Moves
-              <br className="hidden sm:block" /> Projects Forward
+              Technical Expertise.
+              <br className="hidden sm:block" /> Practical Solutions. Reliable Execution.
             </h2>
           </div>
           <Link

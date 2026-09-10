@@ -44,17 +44,13 @@ export default function WhyPanchsutra() {
               className="text-2xl sm:text-3xl lg:text-[42px] font-extrabold leading-tight tracking-tight mb-6"
               style={{ fontFamily: "var(--font-manrope, Manrope, system-ui, sans-serif)", color: "#FFFFFF" }}
             >
-              One Partner.
+              Your Vision.
               <br />
-              Multiple Capabilities.
+              Our Execution.
             </h2>
-            <p className="text-base leading-relaxed mb-4" style={{ color: "#CBD5E1" }}>
-              Successful projects require more than individual services. They require
-              coordination between land, planning, engineering, execution, and management.
-            </p>
             <p className="text-base leading-relaxed mb-10" style={{ color: "#CBD5E1" }}>
-              Panchsutra Consultants brings these capabilities together to provide clients
-              with a more streamlined and reliable project experience.
+              All the expertise, services, and support you need — working together
+              as one seamless team.
             </p>
             <Button href="/about-us" variant="outline" size="md" id="why-cta">
               Learn More About Us

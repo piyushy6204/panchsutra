@@ -226,7 +226,9 @@ export default function OurApproach() {
             className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0C2B45] tracking-tight mb-4"
             style={{ fontFamily: "var(--font-manrope, Manrope, system-ui, sans-serif)" }}
           >
-            One Project. One Coordinated Approach.
+            Connecting Design, Engineering
+            <br className="hidden sm:block" />
+            {" & Execution."}
           </h2>
           <p className="text-base text-[#596572] leading-relaxed">
             We believe successful project execution depends on coordination between every stage of development.

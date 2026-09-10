@@ -7,7 +7,7 @@ import { services } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Real Estate, Engineering & Construction Services",
-  description: "Explore real estate, Civil & MEP consultancy, PMC, turnkey construction, MIDC & SEZ advisory and environmental consultancy in Nashik and Pune.",
+  description: "Explore real estate, Civil & MEP consultancy, PMC, turnkey construction, and environmental consultancy across Maharashtra.",
 };
 
 export default function ServicesIndexPage() {

@@ -28,7 +28,6 @@ export const SERVICE_LINKS = [
   { label: "Project Management Consultancy", href: "/services/project-management-consultancy" },
   { label: "Civil & MEP Consultancy", href: "/services/civil-mep-consultancy" },
   { label: "Turnkey Construction", href: "/services/turnkey-construction" },
-  { label: "MIDC & SEZ Advisory", href: "/services/midc-sez-advisory" },
   { label: "Environmental Consultancy", href: "/services/environmental-consultancy" },
 ] as const;
 
@@ -37,7 +36,6 @@ export const SERVICE_OPTIONS = [
   "Project Management Consultancy",
   "Civil & MEP Consultancy",
   "Turnkey Construction",
-  "MIDC & SEZ Advisory",
   "Environmental Consultancy",
   "Other",
 ] as const;

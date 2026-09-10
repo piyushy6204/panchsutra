@@ -30,7 +30,7 @@ export const services: Service[] = [
     number: "02",
     title: "Project Management Consultancy",
     shortDescription:
-      "Planning, supervision, contractor coordination, quality control, scheduling, and execution management.",
+      "Structured Planning. Seamless Coordination. Controlled Execution.",
     headingLine: "Planning, Coordination & Execution Under Control",
     intro:
       "Effective project management requires coordination between multiple stakeholders, contractors, vendors, engineers, and timelines. Our PMC services help clients manage these moving parts while maintaining focus on quality, cost, timelines, and project objectives.",
@@ -94,33 +94,12 @@ export const services: Service[] = [
       "A turnkey approach simplifies project delivery by bringing planning, engineering, coordination, and construction under one structure — giving clients greater clarity and control.",
   },
   {
-    slug: "midc-sez-advisory",
-    number: "05",
-    title: "MIDC & SEZ Advisory",
-    shortDescription:
-      "Guidance and support for industrial procedures, approvals, documentation, and development planning.",
-    headingLine: "Navigate Industrial Development with Greater Confidence",
-    intro:
-      "Industrial projects often involve complex procedures, documentation, approvals, and development requirements. Our advisory services help clients understand and navigate these processes with project-specific guidance.",
-    description:
-      "We provide project-specific guidance based on the proposed industrial facility and development requirements. The exact requirements depend on the project, location, scale, nature of activity, and applicable regulations.",
-    capabilities: [
-      "MIDC procedures & documentation",
-      "SEZ consultancy",
-      "Industrial project guidance",
-      "Approval coordination",
-      "Development planning support",
-    ],
-    closingText:
-      "Industrial development requires careful navigation of procedures and requirements. Panchsutra provides project-specific advisory support to help clients approach development with greater clarity.",
-  },
-  {
     slug: "environmental-consultancy",
-    number: "06",
+    number: "05",
     title: "Environmental Consultancy",
     shortDescription:
       "Environmental planning, regulatory guidance, sustainability support, and compliance assistance.",
-    headingLine: "Supporting Sustainable & Compliant Development",
+    headingLine: "Supporting Sustainable Development",
     intro:
       "Environmental considerations are an important part of modern project development. We provide environmental consultancy focused on planning, regulatory guidance, sustainability, and compliance requirements.",
     description:

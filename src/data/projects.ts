@@ -14,12 +14,12 @@ export const projects: Project[] = [
   {
     id: "mighty-grace-industrial",
     client: "Mighty Grace",
-    service: "Industrial Plant Setup Solutions",
-    projectName: "Industrial Plant Setup",
-    location: "Nashik",
+    service: "Project Management Consultancy",
+    projectName: "Manufacturing Plant — Ravalgaon, Nashik",
+    location: "Ravalgaon, Nashik",
     description:
-      "Provided practical support and solutions for industrial plant setup and development requirements.",
-    tags: ["Industrial", "Plant Setup", "Nashik"],
+      "Provided Project Management Consultancy for a manufacturing plant at Ravalgaon, Nashik — supporting planning, coordination, and execution across the project lifecycle.",
+    tags: ["PMC", "Manufacturing", "Industrial", "Nashik"],
   },
   {
     id: "skyominiverse-plumbing",
@@ -29,5 +29,15 @@ export const projects: Project[] = [
     description:
       "Delivered plumbing design solutions tailored to the project's technical and functional requirements.",
     tags: ["Plumbing Design", "Engineering", "Residential"],
+  },
+  {
+    id: "vgreen-india-ev",
+    client: "VGreen India",
+    service: "EV Infrastructure Planning",
+    projectName: "Charging Station & BSS Location Selection — North & West Maharashtra",
+    location: "North & West Maharashtra",
+    description:
+      "Supported the selection of various EV charging stations and Battery Swapping Station (BSS) locations across North & West Maharashtra, covering strategic site evaluation and feasibility assessment.",
+    tags: ["EV Infrastructure", "Site Selection", "Maharashtra"],
   },
 ];

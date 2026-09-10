@@ -79,7 +79,6 @@ export default function AboutPreview() {
                   "MEP Consultancy",
                   "Project Management",
                   "Turnkey Construction",
-                  "MIDC & SEZ Advisory",
                   "Environmental Consultancy",
                 ].map((cap) => (
                   <div key={cap} className="flex items-center gap-2">

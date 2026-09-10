@@ -11,27 +11,14 @@ export const industries: Industry[] = [
       "Civil & MEP Consultancy",
       "Project Management Consultancy",
       "Turnkey Construction",
-      "MIDC & SEZ Advisory",
       "Environmental Consultancy",
-    ],
-  },
-  {
-    id: "manufacturing",
-    title: "Manufacturing Units",
-    description:
-      "Manufacturing facilities have specific spatial, utility, structural, and operational requirements that need to be considered from the earliest planning stages. Our engineering and project management capabilities support manufacturing businesses in developing efficient, functional facilities.",
-    relevantServices: [
-      "Civil & MEP Consultancy",
-      "Real Estate Solutions",
-      "Turnkey Construction",
-      "MIDC & SEZ Advisory",
     ],
   },
   {
     id: "warehousing-logistics",
     title: "Warehousing & Logistics",
     description:
-      "Warehouse and logistics facilities require thoughtful planning around vehicle access, loading bays, storage, utilities, and operational flow. We support businesses in developing well-coordinated warehouse projects across Nashik, Pune, and Maharashtra.",
+      "Warehouse and logistics facilities require thoughtful planning around vehicle access, loading bays, storage, utilities, and operational flow. We support businesses in developing well-coordinated warehouse projects across Maharashtra.",
     relevantServices: [
       "Real Estate Solutions",
       "Civil & MEP Consultancy",
@@ -52,21 +39,10 @@ export const industries: Industry[] = [
     ],
   },
   {
-    id: "residential-projects",
-    title: "Residential Projects",
+    id: "residential-commercial-projects",
+    title: "Residential & Commercial Projects",
     description:
-      "Residential developments require coordinated engineering, MEP design, plumbing, and project management to deliver quality outcomes. Our experience across residential project types supports builders and developers in managing complex development requirements.",
-    relevantServices: [
-      "Civil & MEP Consultancy",
-      "Project Management Consultancy",
-      "Turnkey Construction",
-    ],
-  },
-  {
-    id: "commercial-projects",
-    title: "Commercial Projects",
-    description:
-      "Commercial buildings and facilities require careful coordination between structural requirements, MEP systems, quality control, and execution timelines. Panchsutra supports commercial developers and businesses with integrated consultancy and construction solutions.",
+      "Residential and commercial developments require coordinated engineering, MEP design, plumbing, structural coordination, and project management to deliver quality outcomes. Our experience across both project types supports builders and developers in managing complex development requirements.",
     relevantServices: [
       "Civil & MEP Consultancy",
       "Project Management Consultancy",

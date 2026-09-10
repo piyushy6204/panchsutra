@@ -41,14 +41,9 @@ export default function Hero() {
               One-Stop Solution for Real Estate &amp; Construction Services
             </p>
 
-            <p className="text-base text-[#596572] leading-relaxed mb-3 !text-left">
-              From strategic land sourcing and engineering consultancy to project
-              management and turnkey construction, Panchsutra Consultants delivers
-              integrated solutions for developers, industries, businesses, and
-              property owners across India.
-            </p>
             <p className="text-base text-[#596572] leading-relaxed mb-8 !text-left">
-              Based in Nashik, we bring together technical expertise, strategic
+              Operating across Maharashtra, including Pune, Nashik, Mumbai, and
+              other key cities, we bring together technical expertise, strategic
               planning, and execution capabilities to help turn complex projects
               into successful developments.
             </p>
@@ -78,8 +73,7 @@ export default function Hero() {
                     { num: "02", label: "Project Management Consultancy" },
                     { num: "03", label: "Civil & MEP Consultancy" },
                     { num: "04", label: "Turnkey Construction" },
-                    { num: "05", label: "MIDC & SEZ Advisory" },
-                    { num: "06", label: "Environmental Consultancy" },
+                    { num: "05", label: "Environmental Consultancy" },
                   ].map((item) => (
                     <li key={item.num}>
                       <Link

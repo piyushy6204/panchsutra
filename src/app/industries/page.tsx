@@ -37,7 +37,7 @@ export default function IndustriesPage() {
             </h2>
             
             <p className="text-lg text-[#596572] leading-relaxed max-w-3xl">
-              Different industries have different operational, infrastructural, and regulatory requirements. Our cross-disciplinary expertise allows us to provide targeted support across a variety of sectors in Nashik, Pune, and Maharashtra.
+              Different industries have different operational, infrastructural, and regulatory requirements. Our cross-disciplinary expertise allows us to provide targeted support across a variety of sectors throughout Maharashtra and beyond.
             </p>
           </div>
         </Container>
