@@ -110,10 +110,12 @@ h3 {
   h3 { font-size: 1.5rem; }
 }
 
-p {
-  color: #596572;
-  text-align: justify;
-  text-justify: inter-word;
+@layer base {
+  p {
+    color: #596572;
+    text-align: justify;
+    text-justify: inter-word;
+  }
 }
 
 a {

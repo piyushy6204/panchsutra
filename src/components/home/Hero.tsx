@@ -1,104 +1,127 @@
 import Link from "next/link";
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 
 export default function Hero() {
   return (
     <section
-      className="relative bg-white overflow-hidden"
+      className="relative w-full min-h-[85vh] flex items-center overflow-hidden"
       aria-label="Hero section"
     >
-      {/* Subtle geometric background */}
-      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <svg
-          className="absolute top-0 right-0 w-[360px] h-[360px] md:w-[480px] md:h-[480px] opacity-[0.03]"
-          viewBox="0 0 480 480"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line x1="240" y1="0" x2="480" y2="240" stroke="#0C2B45" strokeWidth="1.5" />
-          <line x1="240" y1="0" x2="0" y2="240" stroke="#0C2B45" strokeWidth="1.5" />
-          <line x1="480" y1="240" x2="240" y2="480" stroke="#0C2B45" strokeWidth="1.5" />
-          <line x1="0" y1="240" x2="240" y2="480" stroke="#0C2B45" strokeWidth="1.5" />
-          <rect x="150" y="150" width="180" height="180" stroke="#B29A68" strokeWidth="1" transform="rotate(45 240 240)" />
-        </svg>
+      {/* Mobile Image */}
+      <div className="absolute inset-0 sm:hidden">
+        <Image
+          src="/images/hero-mobile.jpg"
+          alt="Modern commercial construction project in Maharashtra at sunset"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
-      <div className="relative mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-10 pt-2 pb-12 lg:pt-4 lg:pb-16">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      {/* Desktop/Tablet Image */}
+      <div className="absolute inset-0 hidden sm:block">
+        <Image
+          src="/images/hero.jpg"
+          alt="Modern commercial construction project in Maharashtra at sunset"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
+      {/* Overlay to ensure text readability - reduced blue density for better image visibility */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#071A2B]/85 via-[#071A2B]/55 to-black/30" />
+      {/* Additional gradient for mobile */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#071A2B]/80 via-transparent to-transparent sm:hidden" />
+
+      <div className="relative mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-10 py-16 lg:py-24 z-10">
+        <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 lg:gap-16 items-center">
           {/* Left: Content */}
           <div className="max-w-[640px]">
             <h1
-              className="text-[38px] sm:text-[52px] lg:text-[58px] font-extrabold text-[#0C2B45] leading-[1.08] tracking-tight mb-5"
-              style={{ fontFamily: "var(--font-manrope, Manrope, system-ui, sans-serif)" }}
+              className="text-[38px] sm:text-[52px] lg:text-[64px] font-extrabold leading-[1.08] tracking-tight mb-6"
+              style={{ fontFamily: "var(--font-manrope, Manrope, system-ui, sans-serif)", color: "#FFFFFF" }}
             >
               Engineering Excellence.{" "}
               <br className="hidden sm:block" />
               Delivering{" "}
-              <span className="text-[#B29A68]">Precision.</span>
+              <span className="text-[#D4BA88]">Precision.</span>
             </h1>
 
-            <p className="text-base sm:text-lg font-semibold text-[#0C2B45] mb-3 !text-left">
+            <p
+              className="text-lg sm:text-xl font-semibold mb-4 !text-left"
+              style={{ color: "#FFFFFF" }}
+            >
               One-Stop Solution for Real Estate &amp; Construction Services
             </p>
 
-            <p className="text-base text-[#596572] leading-relaxed mb-8 !text-left">
+            <p
+              className="text-base sm:text-lg leading-relaxed mb-8 !text-left max-w-lg"
+              style={{ color: "#FFFFFF" }}
+            >
               Operating across Maharashtra, including Pune, Nashik, Mumbai, and
               other key cities, we bring together technical expertise, strategic
               planning, and execution capabilities to help turn complex projects
               into successful developments.
             </p>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-4">
               <Button href="/contact-us" variant="primary" size="lg" id="hero-cta-primary">
                 Discuss Your Project
               </Button>
-              <Button href="/services" variant="secondary" size="lg" id="hero-cta-secondary">
+              <Link
+                href="/services"
+                id="hero-cta-secondary"
+                className="inline-flex items-center justify-center font-bold transition-all duration-200 border-2 rounded-lg px-8 py-3.5 text-base border-white bg-white/10 hover:bg-white hover:text-[#0C2B45]"
+                style={{ color: "#FFFFFF" }}
+              >
                 Explore Our Services
-              </Button>
+              </Link>
             </div>
           </div>
 
-          {/* Right: Capabilities panel — only on desktop */}
-          <div className="hidden lg:block">
-            <div className="relative">
-              <div className="bg-[#F7F7F5] border border-[#E5E7EB] rounded-lg p-8 relative overflow-hidden">
-                {/* Gold top accent */}
-                <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#B29A68]" aria-hidden="true" />
+          {/* Right: Floating Capabilities Panel */}
+          <div className="hidden lg:flex justify-end relative">
+            <div className="w-[380px] bg-black/40 backdrop-blur-xl border border-white/20 rounded-xl p-8 shadow-2xl relative overflow-hidden">
+              {/* Gold top accent */}
+              <div className="absolute top-0 left-0 right-0 h-[4px] bg-gradient-to-r from-[#B29A68] to-[#D4BA88]" aria-hidden="true" />
 
-                <p className="text-eyebrow mb-6">Our Core Capabilities</p>
+              <p className="text-eyebrow mb-6 tracking-widest uppercase" style={{ color: "#D4BA88" }}>
+                Our Core Capabilities
+              </p>
 
-                <ul className="space-y-0" role="list">
-                  {[
-                    { num: "01", label: "Real Estate Solutions" },
-                    { num: "02", label: "Project Management Consultancy" },
-                    { num: "03", label: "Civil & MEP Consultancy" },
-                    { num: "04", label: "Turnkey Construction" },
-                    { num: "05", label: "Environmental Consultancy" },
-                  ].map((item) => (
-                    <li key={item.num}>
-                      <Link
-                        href="/services"
-                        className="group flex items-center gap-4 py-3.5 border-b border-[#E5E7EB] last:border-0 hover:bg-white -mx-2 px-2 rounded transition-colors duration-150"
-                      >
-                        <span className="text-base sm:text-lg font-bold text-[#B29A68] w-7 flex-shrink-0 font-mono">
-                          {item.num}
-                        </span>
-                        <span className="text-sm font-medium text-[#0C2B45] group-hover:text-[#133558]">
-                          {item.label}
-                        </span>
-                        <span className="ml-auto text-[#B29A68] opacity-0 group-hover:opacity-100 transition-opacity text-xs">
-                          →
-                        </span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+              <ul className="space-y-0" role="list">
+                {[
+                  { num: "01", label: "Real Estate Solutions" },
+                  { num: "02", label: "Project Management Consultancy" },
+                  { num: "03", label: "Civil & MEP Consultancy" },
+                  { num: "04", label: "Turnkey Construction" },
+                  { num: "05", label: "Environmental Consultancy" },
+                ].map((item) => (
+                  <li key={item.num}>
+                    <Link
+                      href="/services"
+                      className="group flex items-center gap-4 py-3.5 border-b border-white/15 last:border-0 hover:bg-white/10 -mx-3 px-3 rounded-md transition-all duration-200"
+                    >
+                      <span className="text-base font-bold text-[#D4BA88] w-6 flex-shrink-0 font-mono">
+                        {item.num}
+                      </span>
+                      <span className="text-[15px] font-medium group-hover:text-[#D4BA88] transition-colors" style={{ color: "#FFFFFF" }}>
+                        {item.label}
+                      </span>
+                      <span className="ml-auto text-[#D4BA88] opacity-0 group-hover:opacity-100 transition-opacity text-xs transform group-hover:translate-x-1 duration-200">
+                        →
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
 
-                <div className="mt-6 pt-5 border-t border-[#E5E7EB]">
-                  <p className="text-xs text-[#8795A1]">
-                    <span className="text-[#B29A68] font-semibold">From Land to Landmark</span> — One integrated project partner.
-                  </p>
-                </div>
+              <div className="mt-6 pt-5 border-t border-white/15">
+                <p className="text-xs font-medium" style={{ color: "#FFFFFF" }}>
+                  <span className="text-[#D4BA88] font-bold">From Land to Landmark</span> — One integrated partner.
+                </p>
               </div>
             </div>
           </div>
