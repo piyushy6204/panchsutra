@@ -40,4 +40,14 @@ export const projects: Project[] = [
       "Supported the selection of various EV charging stations and Battery Swapping Station (BSS) locations across North & West Maharashtra, covering strategic site evaluation and feasibility assessment.",
     tags: ["EV Infrastructure", "Site Selection", "Maharashtra"],
   },
+  {
+    id: "zp-contractor-consultancy",
+    client: "Zilla Parishad Contractor Consultancy",
+    service: "Estimation, Tender Documents & GFC Estimates",
+    projectName: "Government Infrastructure & Civil Development Projects",
+    location: "Maharashtra",
+    description:
+      "Provided Estimation, Tender Documents, and Good for Construction (GFC) estimates to contractors executing Zilla Parishad infrastructure and civil construction projects.",
+    tags: ["Estimation", "Tender Documents", "GFC Estimates", "Contractors"],
+  },
 ];

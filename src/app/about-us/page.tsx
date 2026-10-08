@@ -140,9 +140,17 @@ export default function AboutPage() {
             </div>
             
             {/* Founder Profile */}
-            <div className="bg-[#FAFAF9] border border-[#E8E5DF] rounded-lg p-8 sticky top-32">
-              <div className="w-8 h-px bg-[#B29A68] mb-6" aria-hidden="true" />
-              <p className="text-xs font-semibold text-[#8795A1] uppercase tracking-widest mb-2">
+            <div className="bg-[#FAFAF9] border border-[#E8E5DF] rounded-lg p-6 lg:p-8 sticky top-32">
+              <div className="relative w-full h-[360px] sm:h-[420px] mb-6 rounded-md overflow-hidden border border-[#E8E5DF] bg-[#EAE7E1] shadow-sm">
+                <Image
+                  src="/images/shree_profile.png"
+                  alt="Mr. Shreeganesh Patil — Founder & Principal Consultant"
+                  fill
+                  className="object-contain p-2"
+                  priority
+                />
+              </div>
+              <p className="text-xs font-semibold text-[#8795A1] uppercase tracking-widest mb-1">
                 Founder &amp; Principal Consultant
               </p>
               <h3 
@@ -160,12 +168,6 @@ export default function AboutPage() {
                   Founded by Mr. Shreeganesh Patil, Panchsutra Consultants was established
                   with the vision of providing a more integrated and transparent approach to
                   real estate and construction.
-                </p>
-                <p>
-                  With expertise spanning civil engineering, environmental planning, project
-                  management, and construction execution, Mr. Patil recognized that successful
-                  projects require more than just fragmented services — they require
-                  coordinated expertise.
                 </p>
                 <p>
                   Under his leadership, Panchsutra has grown into a trusted partner for

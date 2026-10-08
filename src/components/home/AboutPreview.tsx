@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 
 export default function AboutPreview() {
@@ -46,24 +47,39 @@ export default function AboutPreview() {
 
           {/* Right: Founder card + values */}
           <div className="space-y-6">
-            {/* Founder */}
-             <div className="border border-[#E8E5DF] rounded-md p-7 bg-[#FAFAF9]">
-              <p className="text-xs font-semibold text-[#8795A1] uppercase tracking-widest mb-2">Founder</p>
-              <h3
-                className="text-xl font-bold text-[#0C2B45] mb-1"
-                style={{ fontFamily: "var(--font-manrope, Manrope, system-ui, sans-serif)" }}
-              >
-                Mr. Shreeganesh Patil
-              </h3>
-              <p className="text-sm text-[#B29A68] font-medium mb-4">
-                Civil & Environmental Technologist
-              </p>
-              <p className="text-sm text-[#596572] leading-relaxed">
-                With expertise across real estate consultancy, civil engineering,
-                environmental consultancy, and construction management, Panchsutra
-                was established to bridge the gap between technical expertise and
-                practical project execution.
-              </p>
+            {/* Founder Card with Image */}
+            <div className="border border-[#E8E5DF] rounded-md p-5 sm:p-6 bg-[#FAFAF9]">
+              <div className="flex flex-col sm:flex-row gap-5 items-center sm:items-start">
+                {/* Image Above on Mobile */}
+                <div className="relative w-full sm:w-44 h-72 sm:h-60 rounded-md overflow-hidden border border-[#E8E5DF] bg-[#EAE7E1] flex-shrink-0 shadow-sm">
+                  <Image
+                    src="/images/shree_profile.png"
+                    alt="Mr. Shreeganesh Patil — Founder of Panchsutra Consultants"
+                    fill
+                    className="object-contain p-1.5"
+                  />
+                </div>
+
+                {/* Info Below Image on Mobile */}
+                <div className="flex-1 min-w-0 text-left">
+                  <p className="text-xs font-semibold text-[#8795A1] uppercase tracking-widest mb-1">Founder</p>
+                  <h3
+                    className="text-xl font-bold text-[#0C2B45] mb-1"
+                    style={{ fontFamily: "var(--font-manrope, Manrope, system-ui, sans-serif)" }}
+                  >
+                    Mr. Shreeganesh Patil
+                  </h3>
+                  <p className="text-sm text-[#B29A68] font-medium mb-3">
+                    Civil &amp; Environmental Technologist
+                  </p>
+                  <p className="text-xs sm:text-sm text-[#596572] leading-relaxed">
+                    With expertise across real estate consultancy, civil engineering,
+                    environmental consultancy, estimation, and construction management, Panchsutra
+                    was established to bridge the gap between technical expertise and
+                    practical project execution.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Core Capabilities */}
